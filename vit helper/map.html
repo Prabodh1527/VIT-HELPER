@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Map | VIT Helper</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>VIT Helper</h1>
+            <p>Campus Map & Location Selection</p>
+        </div>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="report-issue.html">Report Issue</a></li>
+            <li><a href="map.html" class="active">Campus Map</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= MAP SECTION ================= -->
+    <section class="map-section">
+        <h2>Select Location on Campus</h2>
+        <p>Click anywhere on the map to select a location.</p>
+
+        <div class="map-container">
+            <img src="assets/images/campus-map.png"
+                 alt="Campus Map"
+                 id="campusMap"
+                 class="campus-map">
+
+            <div id="mapMarker" class="map-marker"></div>
+        </div>
+
+        <p class="selected-location">
+            Selected Location:
+            <span id="selectedLocation">None</span>
+        </p>
+
+        <a href="report-issue.html" class="btn primary">
+            Use This Location
+        </a>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <p>© 2026 VIT Helper | Campus Map</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/map.js"></script>
+
+</body>
+</html>

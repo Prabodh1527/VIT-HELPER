@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Issue Details | VIT Helper</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>VIT Helper</h1>
+            <p>Issue Details & Collaboration</p>
+        </div>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="issues.html">Issues</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= ISSUE DETAILS ================= -->
+    <section class="issue-details-section">
+
+        <div class="issue-header">
+            <h2 id="issueTitle">Water leakage near Hostel Block C</h2>
+            <span class="status-badge open" id="issueStatus">Open</span>
+        </div>
+
+        <p class="issue-meta">
+            <strong>Category:</strong> Infrastructure |
+            <strong>Priority:</strong> Important |
+            <strong>Location:</strong> Hostel Block C
+        </p>
+
+        <div class="issue-description">
+            <p id="issueDescription">
+                Continuous water leakage observed near the staircase area,
+                causing slippery floors and inconvenience.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ================= VOLUNTEERS ================= -->
+    <section class="issue-section">
+        <h3>Volunteers</h3>
+
+        <ul class="volunteer-list" id="volunteerList">
+            <li>Student Volunteer 1</li>
+            <li>Student Volunteer 2</li>
+        </ul>
+
+        <button class="btn secondary" id="volunteerBtn">
+            Volunteer to Help
+        </button>
+    </section>
+
+    <!-- ================= STATUS UPDATE ================= -->
+    <section class="issue-section">
+        <h3>Update Issue Status</h3>
+
+        <select id="statusSelect">
+            <option value="Open">Open</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Resolved">Resolved</option>
+        </select>
+
+        <button class="btn primary" id="updateStatusBtn">
+            Update Status
+        </button>
+    </section>
+
+    <!-- ================= ACTIVITY LOG ================= -->
+    <section class="issue-section">
+        <h3>Activity Log</h3>
+
+        <ul class="activity-list" id="issueActivity">
+            <li>Issue reported</li>
+            <li>Volunteer joined</li>
+        </ul>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <p>© 2026 VIT Helper | Issue Details</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/data.js"></script>
+    <script src="js/volunteer.js"></script>
+
+</body>
+</html>

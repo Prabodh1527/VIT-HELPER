@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | VIT Helper</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>VIT Helper</h1>
+            <p>User Dashboard</p>
+        </div>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="issues.html">Issues</a></li>
+            <li><a href="report-issue.html">Report Issue</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= DASHBOARD OVERVIEW ================= -->
+    <section class="dashboard-overview">
+        <h2>Campus Overview</h2>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3 id="totalIssues">0</h3>
+                <p>Total Issues</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="openIssues">0</h3>
+                <p>Open Issues</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="volunteerCount">0</h3>
+                <p>Volunteer Activities</p>
+            </div>
+
+            <div class="stat-card emergency">
+                <h3 id="emergencyCount">0</h3>
+                <p>Active Emergencies</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= RECENT ACTIVITY ================= -->
+    <section class="dashboard-section">
+        <h3>Recent Campus Activity</h3>
+
+        <ul class="activity-list" id="activityList">
+            <!-- Dynamically filled by JS -->
+        </ul>
+    </section>
+
+    <!-- ================= QUICK ACTIONS ================= -->
+    <section class="dashboard-section">
+        <h3>Quick Actions</h3>
+
+        <div class="card-grid">
+            <a href="report-issue.html" class="action-card link-card">
+                <h4>➕ Report New Issue</h4>
+                <p>Raise a campus issue quickly</p>
+            </a>
+
+            <a href="issues.html" class="action-card link-card">
+                <h4>📋 View All Issues</h4>
+                <p>Browse ongoing campus problems</p>
+            </a>
+
+            <a href="volunteer.html" class="action-card link-card">
+                <h4>🤝 Volunteer</h4>
+                <p>Help resolve issues nearby</p>
+            </a>
+
+            <a href="map.html" class="action-card link-card">
+                <h4>🗺 Campus Map</h4>
+                <p>View issue locations on map</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <p>© 2026 VIT Helper | Dashboard</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+
+</body>
+</html>

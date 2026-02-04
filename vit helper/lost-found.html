@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lost & Found | VIT Helper</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>VIT Helper</h1>
+            <p>Lost & Found</p>
+        </div>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="issues.html">Issues</a></li>
+            <li><a href="lost-found.html" class="active">Lost & Found</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= LOST / FOUND TOGGLE ================= -->
+    <section class="filter-bar">
+        <select id="lostFoundFilter">
+            <option value="All">All</option>
+            <option value="Lost">Lost Items</option>
+            <option value="Found">Found Items</option>
+        </select>
+    </section>
+
+    <!-- ================= LOST & FOUND LIST ================= -->
+    <section class="issues-section">
+        <h2>Lost & Found Items</h2>
+
+        <div id="lostFoundContainer" class="issues-grid">
+            <!-- Items rendered dynamically via JS -->
+        </div>
+    </section>
+
+    <!-- ================= INFO STRIP ================= -->
+    <section class="info-strip">
+        <div class="info-box">
+            <h4>Community Powered</h4>
+            <p>Anyone can help identify or return lost items.</p>
+        </div>
+
+        <div class="info-box">
+            <h4>Status Tracking</h4>
+            <p>Items are marked Lost, Found, or Returned.</p>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <p>© 2026 VIT Helper | Lost & Found</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+
+</body>
+</html>

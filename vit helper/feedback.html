@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback | VIT Helper</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>VIT Helper</h1>
+            <p>Feedback & Suggestions</p>
+        </div>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= FEEDBACK FORM ================= -->
+    <section class="form-section">
+        <h2>Share Your Feedback</h2>
+
+        <form id="feedbackForm" class="issue-form">
+
+            <!-- Category -->
+            <label for="feedbackCategory">Feedback Category</label>
+            <select id="feedbackCategory" required>
+                <option value="">Select category</option>
+                <option>Infrastructure</option>
+                <option>Hostel</option>
+                <option>Cleanliness</option>
+                <option>Security</option>
+                <option>Transport</option>
+                <option>Overall Campus Experience</option>
+            </select>
+
+            <!-- Rating -->
+            <label>Rating</label>
+            <div class="radio-group">
+                <label><input type="radio" name="rating" value="1"> 1</label>
+                <label><input type="radio" name="rating" value="2"> 2</label>
+                <label><input type="radio" name="rating" value="3" checked> 3</label>
+                <label><input type="radio" name="rating" value="4"> 4</label>
+                <label><input type="radio" name="rating" value="5"> 5</label>
+            </div>
+
+            <!-- Message -->
+            <label for="feedbackMessage">Your Feedback</label>
+            <textarea id="feedbackMessage" rows="4"
+                placeholder="Write your suggestions or experience here"
+                required></textarea>
+
+            <!-- Anonymous -->
+            <label class="checkbox">
+                <input type="checkbox" id="feedbackAnonymous">
+                Submit anonymously
+            </label>
+
+            <!-- Submit -->
+            <button type="submit" class="btn primary">
+                Submit Feedback
+            </button>
+
+        </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <p>© 2026 VIT Helper | Feedback</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/forms.js"></script>
+
+</body>
+</html>

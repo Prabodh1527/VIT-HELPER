@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel Issues | VIT Helper</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>VIT Helper</h1>
+            <p>Hostel & Residential Issues</p>
+        </div>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="issues.html">All Issues</a></li>
+            <li><a href="hostel.html" class="active">Hostel</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= HOSTEL FILTER ================= -->
+    <section class="filter-bar">
+        <select id="hostelBlockFilter">
+            <option value="All">All Blocks</option>
+            <option>Block A</option>
+            <option>Block B</option>
+            <option>Block C</option>
+            <option>Block D</option>
+        </select>
+
+        <select id="hostelIssueType">
+            <option value="All">All Issue Types</option>
+            <option>Water</option>
+            <option>Electricity</option>
+            <option>Cleanliness</option>
+            <option>Maintenance</option>
+            <option>Safety</option>
+        </select>
+    </section>
+
+    <!-- ================= HOSTEL ISSUES ================= -->
+    <section class="issues-section">
+        <h2>Reported Hostel Issues</h2>
+
+        <div id="hostelIssuesContainer" class="issues-grid">
+            <!-- Hostel issues rendered via JS -->
+        </div>
+    </section>
+
+    <!-- ================= INFO ================= -->
+    <section class="info-strip">
+        <div class="info-box">
+            <h4>Community Help</h4>
+            <p>Nearby residents can volunteer and assist quickly.</p>
+        </div>
+
+        <div class="info-box">
+            <h4>Escalation</h4>
+            <p>Unresolved issues can be escalated to authorities.</p>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <p>© 2026 VIT Helper | Hostel Module</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+
+</body>
+</html>

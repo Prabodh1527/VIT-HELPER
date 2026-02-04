@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Issues | VIT Helper</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>VIT Helper</h1>
+            <p>Campus Issues Feed</p>
+        </div>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="issues.html" class="active">Issues</a></li>
+            <li><a href="report-issue.html">Report Issue</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= FILTER BAR ================= -->
+    <section class="filter-bar">
+        <select id="categoryFilter">
+            <option value="All">All Categories</option>
+            <option>Infrastructure</option>
+            <option>Hostel & Residential</option>
+            <option>Cleanliness</option>
+            <option>IT & Network</option>
+            <option>Security</option>
+            <option>Lost & Found</option>
+        </select>
+
+        <select id="priorityFilter">
+            <option value="All">All Priorities</option>
+            <option>Normal</option>
+            <option>Important</option>
+            <option>Emergency</option>
+        </select>
+    </section>
+
+    <!-- ================= ISSUE LIST ================= -->
+    <section class="issues-section">
+        <h2>Reported Issues</h2>
+
+        <div id="issuesContainer" class="issues-grid">
+            <!-- Issues rendered by JS -->
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <p>© 2026 VIT Helper | Issues</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/volunteer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+/* =====================================================
+   VIT Helper - Components CSS
+   Cards, badges, UI elements
+   ===================================================== */
+
+/* ---------- CARDS (GENERAL) ---------- */
+.action-card,
+.stat-card,
+.issue-card,
+.announcement-card {
+    background-color: var(--card-bg);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-card:hover,
+.issue-card:hover,
+.announcement-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- LINK CARDS ---------- */
+.link-card {
+    cursor: pointer;
+    color: inherit;
+}
+
+.link-card:hover {
+    text-decoration: none;
+}
+
+/* ---------- ACTION CARDS ---------- */
+.action-card h4 {
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.action-card p {
+    font-size: 0.85rem;
+}
+
+/* ---------- STAT CARDS ---------- */
+.stat-card {
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.stat-card p {
+    font-size: 0.85rem;
+}
+
+/* ---------- ISSUE CARDS ---------- */
+.issue-card {
+    position: relative;
+}
+
+.issue-card h3 {
+    margin-bottom: 6px;
+}
+
+.issue-card .issue-meta {
+    font-size: 0.8rem;
+    color: var(--muted-text);
+    margin-bottom: 10px;
+}
+
+/* ---------- ISSUE PRIORITY STRIP ---------- */
+.issue-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--primary-color);
+}
+
+.issue-card.priority-important::before {
+    background-color: var(--warning-color);
+}
+
+.issue-card.priority-emergency::before {
+    background-color: var(--danger-color);
+}
+
+/* ---------- STATUS BADGES ---------- */
+.status-badge {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    border-radius: 12px;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.status-badge.open {
+    background-color: var(--warning-color);
+}
+
+.status-badge.in-progress {
+    background-color: var(--primary-color);
+}
+
+.status-badge.resolved {
+    background-color: var(--success-color);
+}
+
+/* ---------- VOLUNTEER LIST ---------- */
+.volunteer-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.volunteer-list li {
+    background-color: #f1f3f5;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+/* ---------- ANNOUNCEMENTS ---------- */
+.announcement-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.announcement-card h3 {
+    margin-bottom: 6px;
+}
+
+.announcement-card .date {
+    font-size: 0.75rem;
+    color: var(--muted-text);
+}
+
+/* ---------- ANNOUNCEMENT TAGS ---------- */
+.tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.tag.info {
+    background-color: var(--primary-color);
+}
+
+.tag.warning {
+    background-color: var(--warning-color);
+}
+
+.tag.danger {
+    background-color: var(--danger-color);
+}
+
+/* ---------- INFO STRIP ---------- */
+.info-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 30px 60px;
+}
+
+.info-box h4 {
+    margin-bottom: 6px;
+    color: var(--primary-color);
+}
+
+/* ---------- CHECKBOX & RADIO ---------- */
+.checkbox,
+.radio-group label {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+/* ---------- MAP MARKER ---------- */
+.map-marker {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: var(--danger-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* ---------- EMERGENCY HIGHLIGHT ---------- */
+.emergency {
+    border-left: 6px solid var(--danger-color);
+}

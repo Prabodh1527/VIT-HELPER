@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard | VIT Helper</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/emergency.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>VIT Helper</h1>
+            <p>College Administration Dashboard</p>
+        </div>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">User Dashboard</a></li>
+            <li><a href="admin-dashboard.html" class="active">Admin Dashboard</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= ADMIN OVERVIEW ================= -->
+    <section class="dashboard-overview">
+        <h2>Campus Overview</h2>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3 id="adminTotalIssues">0</h3>
+                <p>Total Issues</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="adminOpenIssues">0</h3>
+                <p>Open Issues</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="adminResolvedIssues">0</h3>
+                <p>Resolved Issues</p>
+            </div>
+
+            <div class="stat-card emergency">
+                <h3 id="adminEmergencyCount">0</h3>
+                <p>Active Emergencies</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= DEPARTMENT SUMMARY ================= -->
+    <section class="dashboard-section">
+        <h3>Department-wise Issue Summary</h3>
+
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Issues</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Infrastructure</td>
+                    <td>12</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr>
+                    <td>Hostel & Residential</td>
+                    <td>8</td>
+                    <td>Open</td>
+                </tr>
+                <tr>
+                    <td>Security</td>
+                    <td>2</td>
+                    <td>High Priority</td>
+                </tr>
+                <tr>
+                    <td>Lost & Found</td>
+                    <td>5</td>
+                    <td>Ongoing</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ================= ACTIVITY LOG ================= -->
+    <section class="dashboard-section">
+        <h3>Recent Activity</h3>
+
+        <ul class="activity-list" id="adminActivity">
+            <li>Emergency reported near Library</li>
+            <li>Volunteer joined Hostel Block C issue</li>
+            <li>Infrastructure issue marked resolved</li>
+        </ul>
+    </section>
+
+    <!-- ================= CANVAS ALERT ================= -->
+    <section class="dashboard-section">
+        <h3>Emergency Alert Indicator</h3>
+        <canvas id="emergencyCanvas" width="200" height="100"></canvas>
+        <p>Canvas-based visual alert for emergencies</p>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <p>© 2026 VIT Helper | Admin Dashboard</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/canvas.js"></script>
+
+</body>
+</html>

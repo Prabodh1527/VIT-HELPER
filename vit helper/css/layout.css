@@ -1,0 +1,196 @@
+/* =====================================================
+   VIT Helper - Layout CSS
+   Page structure, grids, navigation
+   ===================================================== */
+
+/* ---------- NAVIGATION ---------- */
+.main-nav {
+    background-color: var(--secondary-color);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.main-nav ul li {
+    margin: 0 12px;
+}
+
+.main-nav ul li a {
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.main-nav ul li a.active,
+.main-nav ul li a:hover {
+    background-color: var(--primary-color);
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+    padding: 30px 60px;
+}
+
+.hero-section {
+    text-align: center;
+    background: linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    color: #ffffff;
+    padding: 60px 80px;
+}
+
+.hero-section h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.hero-section p {
+    color: #eaeaea;
+    margin-top: 10px;
+}
+
+/* ---------- HERO ACTIONS ---------- */
+.hero-actions {
+    margin-top: 25px;
+}
+
+.hero-actions .btn {
+    margin: 0 10px;
+}
+
+/* ---------- GRID SYSTEM ---------- */
+.card-grid,
+.stats-grid,
+.issues-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* ---------- DASHBOARD ---------- */
+.dashboard-overview {
+    background-color: #ffffff;
+}
+
+.dashboard-section {
+    margin-top: 30px;
+}
+
+/* ---------- FILTER BAR ---------- */
+.filter-bar {
+    display: flex;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 15px 60px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.filter-bar select {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+}
+
+/* ---------- FORMS ---------- */
+.form-section {
+    max-width: 600px;
+    margin: auto;
+}
+
+.issue-form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.issue-form input,
+.issue-form textarea,
+.issue-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.issue-form textarea {
+    resize: vertical;
+}
+
+/* ---------- MAP ---------- */
+.map-section {
+    text-align: center;
+}
+
+.map-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.campus-map {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+}
+
+/* ---------- TABLE ---------- */
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.summary-table th,
+.summary-table td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.summary-table th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* ---------- ACTIVITY LIST ---------- */
+.activity-list {
+    list-style: none;
+}
+
+.activity-list li {
+    background-color: #ffffff;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+
+    section {
+        padding: 20px;
+    }
+
+    .hero-section {
+        padding: 40px 20px;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+    }
+}

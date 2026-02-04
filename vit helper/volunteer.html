@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Volunteer | VIT Helper</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>VIT Helper</h1>
+            <p>Volunteer & Collaborate</p>
+        </div>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="issues.html">Issues</a></li>
+            <li><a href="volunteer.html" class="active">Volunteer</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= VOLUNTEER INTRO ================= -->
+    <section class="volunteer-intro">
+        <h2>Help Your Campus</h2>
+        <p>
+            Browse issues where help is needed and volunteer to assist.
+            Even small actions can make a big difference.
+        </p>
+    </section>
+
+    <!-- ================= VOLUNTEER ISSUE LIST ================= -->
+    <section class="volunteer-section">
+        <h3>Issues Needing Volunteers</h3>
+
+        <div id="volunteerIssues" class="issues-grid">
+            <!-- Issues loaded dynamically via JS -->
+        </div>
+    </section>
+
+    <!-- ================= VOLUNTEER INFO ================= -->
+    <section class="info-strip">
+        <div class="info-box">
+            <h4>Collaborative</h4>
+            <p>Multiple volunteers can work on the same issue.</p>
+        </div>
+
+        <div class="info-box">
+            <h4>Transparent</h4>
+            <p>All progress is visible to the campus community.</p>
+        </div>
+
+        <div class="info-box">
+            <h4>Impactful</h4>
+            <p>Quick responses improve campus life for everyone.</p>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <p>© 2026 VIT Helper | Volunteer Hub</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/volunteer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+/* =====================================================
+   VIT Helper - Main CSS
+   Base styles, colors, typography
+   ===================================================== */
+
+/* ---------- CSS RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- ROOT VARIABLES ---------- */
+:root {
+    --primary-color: #1f3c88;
+    --secondary-color: #162447;
+    --accent-color: #f4b41a;
+
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+
+    --background-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --text-color: #2c2c2c;
+    --muted-text: #6c757d;
+}
+
+/* ---------- BODY ---------- */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ---------- LINKS ---------- */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- HEADINGS ---------- */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+/* ---------- PARAGRAPHS ---------- */
+p {
+    font-size: 0.95rem;
+    color: var(--muted-text);
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn.primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background-color: #162f6b;
+}
+
+.btn.secondary {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+.btn.secondary:hover {
+    background-color: #0f1a36;
+}
+
+/* ---------- HEADER ---------- */
+.main-header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px 30px;
+}
+
+.main-header h1 {
+    color: #ffffff;
+}
+
+.main-header p {
+    color: #e0e0e0;
+    font-size: 0.9rem;
+}
+
+/* ---------- FOOTER ---------- */
+.main-footer {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.main-footer p {
+    color: #dddddd;
+    font-size: 0.85rem;
+}
+
+/* ---------- UTILITIES ---------- */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}

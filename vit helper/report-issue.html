@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Issue | VIT Helper</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>VIT Helper</h1>
+            <p>Report a Campus Issue</p>
+        </div>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="issues.html">Issues</a></li>
+            <li><a href="report-issue.html" class="active">Report Issue</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= REPORT FORM ================= -->
+    <section class="form-section">
+        <h2>Raise a New Issue</h2>
+
+        <form id="issueForm" class="issue-form">
+
+            <!-- Issue Title -->
+            <label for="issueTitle">Issue Title</label>
+            <input type="text" id="issueTitle" placeholder="Short summary of the issue" required>
+
+            <!-- Issue Description -->
+            <label for="issueDescription">Description</label>
+            <textarea id="issueDescription" rows="4"
+                placeholder="Explain the issue in detail" required></textarea>
+
+            <!-- Category -->
+            <label for="issueCategory">Category</label>
+            <select id="issueCategory" required>
+                <option value="">Select category</option>
+                <option>Infrastructure</option>
+                <option>Hostel & Residential</option>
+                <option>Cleanliness</option>
+                <option>IT & Network</option>
+                <option>Security</option>
+                <option>Lost & Found</option>
+                <option>Other</option>
+            </select>
+
+            <!-- Priority -->
+            <label>Priority</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="priority" value="Normal" checked>
+                    Normal
+                </label>
+                <label>
+                    <input type="radio" name="priority" value="Important">
+                    Important
+                </label>
+                <label>
+                    <input type="radio" name="priority" value="Emergency">
+                    Emergency
+                </label>
+            </div>
+
+            <!-- Image Upload -->
+            <label for="issueImage">Upload Image (optional)</label>
+            <input type="file" id="issueImage" accept="image/*">
+
+            <!-- Location -->
+            <label for="issueLocation">Location</label>
+            <input type="text" id="issueLocation"
+                   placeholder="Eg: Men's Hostel Block C, Library Area">
+
+            <p class="hint">
+                Or select location using the <a href="map.html">Campus Map</a>
+            </p>
+
+            <!-- Anonymous -->
+            <label class="checkbox">
+                <input type="checkbox" id="anonymous">
+                Report anonymously
+            </label>
+
+            <!-- Submit -->
+            <button type="submit" class="btn primary">
+                Submit Issue
+            </button>
+
+        </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <p>© 2026 VIT Helper | Report Issue</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/forms.js"></script>
+
+</body>
+</html>

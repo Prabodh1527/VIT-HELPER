@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Infrastructure | VIT Helper</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>VIT Helper</h1>
+            <p>Infrastructure & Campus Services</p>
+        </div>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="issues.html">All Issues</a></li>
+            <li><a href="infrastructure.html" class="active">Infrastructure</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="emergency.html">Emergency</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= INFRA FILTER ================= -->
+    <section class="filter-bar">
+        <select id="infraTypeFilter">
+            <option value="All">All Services</option>
+            <option>Roads</option>
+            <option>Buildings</option>
+            <option>Classrooms</option>
+            <option>Laboratories</option>
+            <option>Wi-Fi & Network</option>
+            <option>Electricity</option>
+            <option>Transport</option>
+        </select>
+
+        <select id="infraPriorityFilter">
+            <option value="All">All Priorities</option>
+            <option>Normal</option>
+            <option>Important</option>
+            <option>Emergency</option>
+        </select>
+    </section>
+
+    <!-- ================= INFRA ISSUES ================= -->
+    <section class="issues-section">
+        <h2>Infrastructure Issues</h2>
+
+        <div id="infraIssuesContainer" class="issues-grid">
+            <!-- Rendered by JS -->
+        </div>
+    </section>
+
+    <!-- ================= INFO STRIP ================= -->
+    <section class="info-strip">
+        <div class="info-box">
+            <h4>Service Routing</h4>
+            <p>Issues are routed to appropriate campus departments.</p>
+        </div>
+
+        <div class="info-box">
+            <h4>Volunteer Support</h4>
+            <p>Students can assist with temporary or minor fixes.</p>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="main-footer">
+        <p>© 2026 VIT Helper | Infrastructure Module</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/data.js"></script>
+    <script src="js/render.js"></script>
+
+</body>
+</html>
